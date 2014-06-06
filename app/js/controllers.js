@@ -2,47 +2,22 @@
 
 /* Controllers */
 
+angular.module('myApp.controllers', [])
+	.controller('HomeController', ['$scope', function($scope) {
+		
+	}])
+	.controller('BlogController', ['$scope', function($scope) {
+	
+	}])
+	.controller('ContactController', ['$scope', function($scope) {
+	
+	}])
+	.controller('TestController', ['$scope', function($scope) {
+	
+	}])
+  .controller('MyCtrl1', ['$scope', function($scope) {
 
-function GenericViewCtrl($scope) {
-}
-GenericViewCtrl.$inject = ['$scope'];
+  }])
+  .controller('MyCtrl2', ['$scope', function($scope) {
 
-
-function ContactViewCtrl($scope, $http) {
-
-    $scope.lastForm = {};
-
-    $scope.sendForm = function(form) {
-        $scope.lastForm = angular.copy(form);
-        $http({
-            method: 'POST',
-            url: "/backend/email.php",
-            data: {
-                'contactname':$scope.form.name,
-                'weburl':$scope.form.website,
-                'email':$scope.form.email,
-                'app':$scope.form.project,
-                'subject':$scope.form.subject,
-                'message':$scope.form.message
-            },
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-        }).success(function(data, status, headers, config) {
-                $scope.resultData = data;
-                alert("Message sent successfully. We'll get in touch with you soon.");
-
-            }).error(function(data, status, headers, config) {
-                $scope.resultData = data;
-                alert("Sending message failed.");
-            });
-    }
-
-    $scope.resetForm = function() {
-        $scope.form = angular.copy($scope.lastForm);
-    }
-
-}
-
-ContactViewCtrl.$inject = ['$scope', '$http'];
-
-
-
+  }]);

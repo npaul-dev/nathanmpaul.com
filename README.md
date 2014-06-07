@@ -1,6 +1,5 @@
-"resume and relevant projects along with my personal musings" site
+resume and blog site
 ========================
-
 
 This web application integrates
 

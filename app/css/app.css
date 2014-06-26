@@ -42,3 +42,12 @@ body {
 .about {
 	padding: 20px;
 }
+.contact_icon {
+	padding: 8px;
+	margin: 8px;
+}
+.contact_icon img {
+	margin:0 auto;
+	max-width: 150px;
+	max-height: 150px;
+}

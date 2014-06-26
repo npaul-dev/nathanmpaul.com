@@ -13,6 +13,7 @@ config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeController'});
 	$routeProvider.when('/blog', {templateUrl: 'partials/blog.html', controller: 'BlogController'});
 	$routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'ContactController'});
+	$routeProvider.when('/contact_me', {templateUrl: 'partials/contact_me.html', controller: 'ContactController'});
 	$routeProvider.when('/test', {templateUrl: 'partials/singlepage_template.html', controller: 'TestController'});
 
   $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
